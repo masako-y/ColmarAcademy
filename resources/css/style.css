@@ -75,7 +75,7 @@ h3 {
   padding: 2rem;
 }
 
-/* learn-section */
+/* banner-section */
 
 .banner {
   display: flex;
@@ -115,4 +115,18 @@ h3 {
   padding: 1rem 2rem;
   margin-left: 1.5rem;
   font-size: 2rem;
+}
+
+/* Information section */
+
+.information {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.leftinfo {
+  width: 60%;
+  margin: 2rem 1.5rem;
 }
