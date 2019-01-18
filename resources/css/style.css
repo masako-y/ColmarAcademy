@@ -1,15 +1,18 @@
 /* Universal Styles */
 
 html {
-  font-family: helvetica, sans-serif;
+  font-family: roboto, "Open+Sans", sans-serif;
   font-size: 16px;
   color: #4a4a4a;
   margin: auto;
 }
 
-/*.main-content {
+.main-content {
   position: relative;
-}*/
+
+  margin: auto;
+  width: 100%
+}
 
 .center {
   text-align: center;
@@ -24,10 +27,22 @@ html {
   max-width: 100%;
 }
 
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 2rem 0 1.5rem 0;
+}
+
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: normal;
+  padding: 2rem;
+
+}
+
+p {
+  line-height: 3rem;
 }
 /* Header */
 
@@ -68,11 +83,6 @@ header nav ul {
 nav li {
   padding-left: 1rem;
   font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 2.5rem;
-  padding: 2rem;
 }
 
 /* banner-section */
@@ -129,4 +139,13 @@ h3 {
 .leftinfo {
   width: 60%;
   margin: 2rem 1.5rem;
+}
+
+.rightinfo {
+  width: 40%;
+}
+
+.information p {
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
 }
