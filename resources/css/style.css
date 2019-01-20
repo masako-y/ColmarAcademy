@@ -41,7 +41,7 @@ h3 {
 h4 {
   font-size: 2rem;
   font-weight: 500;
-  padding: .5rem 0;
+  padding: .5rem;
 }
 
 h5 {
@@ -208,15 +208,13 @@ nav li {
 }
 .course P {
   font-size: 1.7rem;
+  padding: .5rem;
 }
 
 .flex-container {
   display: flex;
   flex-flow: row wrap;
   padding: 0 4.5rem;
-  /*
-  justify-content: center;
-  align-items: center;*/
 }
 
 .course {
@@ -225,9 +223,26 @@ nav li {
   margin: 1rem 1rem;
   flex-grow: 1;
   background-color: white;
+}
 
+.course h3 {
+  padding: .5rem;
+}
+
+.course-text {
+  padding: 1rem 1rem 1.5rem 1rem;;
 }
 
 .course img {
   width: 500px;
+}
+
+/* Thesis Section */
+
+.thesis {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 2rem;
+  width: 100%;
 }
