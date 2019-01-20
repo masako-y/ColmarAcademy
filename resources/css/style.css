@@ -201,7 +201,7 @@ nav li {
 /* Courses Section */
 
 .courses {
-  padding: 2rem 4.5rem;
+  padding: 0 4.5rem 2rem 4.5rem;
   background-color: #d3d3d3;
   width: 100%;
 
@@ -239,10 +239,16 @@ nav li {
 
 /* Thesis Section */
 
+.thesis-container {
+  padding-bottom: 2rem;
+
+  width: 100%;
+
+}
 .thesis {
   display: inline-flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2rem 2rem;
+  padding: 0 2rem;
   width: 100%;
 }
