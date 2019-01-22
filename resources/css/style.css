@@ -36,22 +36,23 @@ h3 {
   font-size: 2.5rem;
   font-weight: bold;
   line-height: normal;
+  margin: 1rem 0;
 }
 
 h4 {
   font-size: 2rem;
   font-weight: 500;
-  padding: .5rem;
 }
 
 h5 {
   font-size: 1.3rem;
   font-weight: 500;
-  padding-top: 2rem;
+  margin-top: 2rem;
 }
 
 p {
   line-height: 2rem;
+  margin: .5rem 0;
 }
 /* Header */
 
@@ -116,7 +117,7 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  max-width: 40%;
   margin-left: 1.5rem;
 }
 
@@ -135,7 +136,7 @@ nav li {
   background-color: #4a4a4a;
   color: white;
   text-align: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   margin-left: 1.5rem;
   font-size: 2rem;
 }
@@ -171,6 +172,7 @@ nav li {
 .info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem;
   margin-bottom: 1rem;
 }
@@ -188,7 +190,7 @@ nav li {
 }
 
 .information p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   letter-spacing: .5px;
 }
 
@@ -207,8 +209,7 @@ nav li {
 
 }
 .course P {
-  font-size: 1.7rem;
-  padding: .5rem;
+  font-size: 1.9rem;
 }
 
 .flex-container {
@@ -225,12 +226,8 @@ nav li {
   background-color: white;
 }
 
-.course h3 {
-  padding: .5rem;
-}
-
 .course-text {
-  padding: 1rem 1rem 1.5rem 1rem;;
+  padding: 1rem 1rem 1.5rem 1.5rem;
 }
 
 .course img {
@@ -241,7 +238,6 @@ nav li {
 
 .thesis-container {
   padding-bottom: 2rem;
-
   width: 100%;
 
 }
@@ -251,4 +247,13 @@ nav li {
   align-items: flex-start;
   padding: 0 2rem;
   width: 100%;
+}
+
+.thesis p {
+  font-size: 1.7rem;
+  letter-spacing: .5px;
+}
+
+.thesis video {
+  margin-bottom: 1.5rem;
 }
