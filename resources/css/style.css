@@ -1,17 +1,414 @@
 /* Universal Styles */
 
 html {
-  font-family: roboto, "Open+Sans", sans-serif;
+  font-family: Montserrat, Roboto, sans-serif;
   font-size: 16px;
-  color: #4a4a4a;
-  margin: auto;
+  /*color: #4a4a4a;*/
+  background-color: #eeeeee;
 }
 
-.main-content {
-  /*position: relative;
-  margin: auto;
-  width: 100%*/
+body {
+  line-height: 1.4rem;
 }
+
+.flex-container {
+  display: flex;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  padding: 1.5rem;
+  color: #e05038;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+
+
+/*
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  z-index: 1;
+  color: white;
+  background-color: orange;
+  padding: 1rem .5rem 1rem 1.5rem;
+}
+
+.logo {
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 1.5rem;
+}
+
+.logo img {
+  width: 4rem;
+  height: 3.5rem;
+}
+
+.logo span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.logo span em {
+  color: lightgray;
+  font-weight: 500;
+}
+
+nav {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.desktop span {
+  color: red;
+}
+
+nav span {
+  padding-right: 1rem;
+  margin-right: 1.5rem;
+}
+
+/* Header */
+
+header {
+  height: 3.5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #e6af4b;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 13);
+}
+
+.logo img {
+  width: 4rem;
+  height: 3rem;
+}
+
+header span {
+  font-size: 1.5rem;
+}
+
+em {
+  font-weight: bold;
+  color: black;
+}
+
+header img {
+  padding-left: 1.5rem;
+}
+
+nav {
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+ul a {
+  margin-right: 1rem;
+  color: white;
+  font-weight: 500;
+}
+
+ul li {
+  display: inline;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: font-size linear 200ms;
+}
+
+ul li:hover {
+  font-size: 1.25rem;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 580px) {
+  .logo,
+  .menu {
+    display: none;
+  }
+  header img {
+    padding-left: 0;
+  }
+  .mobile {
+    display: inline-flex;
+    flex: 1;
+    justify-content: space-around;
+  }
+}
+
+/* Banner */
+
+.main {
+  padding-top: 4rem;
+  background-color: #f4ede3;
+}
+
+.column1 {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.column1 img,
+video {
+  width: 100%;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+}
+
+.column2 h1,
+h3,
+button {
+  width: 80%;
+  padding: 1rem 0;
+}
+
+button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  background-color: #e05038;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.4s ease-in;
+}
+
+button:hover {
+  background-color: #e6af4b;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 580px) {
+  .main {
+    display: block;
+  }
+
+  .column1 {
+    padding: 0;
+    width: 100%;
+  }
+
+  .main .column2 {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    text-align: left;
+  }
+
+  button {
+    width: 93%;
+  }
+}
+
+/* Information Section */
+
+.second {
+  padding-bottom: 2rem;
+}
+
+.second .column1 {
+  justify-content: space-between;
+}
+
+.information {
+  display: inline;
+  padding-top: 1.5rem;
+}
+
+.info {
+  display: flex;
+  padding: 0.5rem;
+  transition: background-color 200ms linear;
+}
+
+.info:hover {
+  background-color: #e6af4b;
+}
+
+.image-container {
+  flex: 3.5;
+  line-height: 0;
+}
+
+.image-container img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  flex: 6.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+a {
+  color: #e05038;
+}
+ a:hover {
+   color: white;
+   font-size: 1.3rem;
+ }
+
+ a {
+   transition: all 0.4s ease-out;
+ }
+
+@media only screen and (max-width: 580px) {
+  .second .column2 {
+    width: 100%;
+  }
+
+  .second {
+    padding-bottom: 0;
+  }
+
+  .second .info {
+    display: block;
+    padding: 2rem 1rem;
+  }
+
+  .information {
+    padding-top: 0;
+  }
+}
+
+/* Course Section */
+.courses {
+  background-color: #f4ede3;
+}
+
+.title {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.course-list {
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.course {
+  width: 25%;
+  margin: 1rem;
+  background-color: #334431;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+
+.course:hover {
+  background-color: #e6af4b;
+}
+
+.course h3 {
+  font-weight: 200;
+}
+
+.image img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 580px) {
+  .courses {
+    background-color: white;
+  }
+
+  .courses .mobile {
+    display: block;
+  }
+
+  .mobile .details {
+    background-color: #334431;
+    color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+    transition: background-color 0.3s linear;
+  }
+
+  .mobile .details:hover {
+    background-color: #e6af4b;
+  }
+
+  .mobile .details h3 {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .fourth .column1 {
+    width: 100%;
+  }
+
+  video {
+    padding-bottom: 1.5rem;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: #f4ede3;
+}
+
+footer nav {
+  justify-content: space-between;
+}
+
+footer nav h4 {
+  padding-left: 1.5rem;
+}
+
+@media only screen and (max-width: 580px) {
+  footer h4 {
+    padding: 1rem;
+  }
+
+}
+/* here*/
+
+/*
 .flex {
   display: flex;
 }
@@ -27,6 +424,13 @@ html {
 .image-container img {
   display: block;
   max-width: 100%;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 1.5rem;
 }
 
 h2 {
@@ -57,40 +461,30 @@ p {
   line-height: 2rem;
   margin: .5rem 0;
 }
-/* Header */
 
+/* Header */
+/*
 header {
   display: flex;
   align-items: center;
   position: fixed;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   z-index: 1;
   color: white;
   background-color: orange;
   padding: 1rem .5rem 1rem 1.5rem;
 }
 
-  /*.header {
-justify-content: space-between;*/
-    /*width: 100%;
-  /*padding: 1rem .5rem 1rem 1.5rem;
-}*/
-
 .logo {
-  display: flex;
   align-items: center;
   flex-grow: 1;
   padding-left: 1.5rem;
-
-
-  /*vertical-align: middle;*/
 }
 
 .logo img {
   width: 4rem;
   height: 3.5rem;
-  /*margin-left: 1.5rem;*/
 }
 
 .logo span {
@@ -105,23 +499,26 @@ justify-content: space-between;*/
 
 nav {
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+.desktop span {
+  color: red;
 }
 
 nav span {
-  color: lightgray;
-  padding-right: 2rem;
+  padding-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 /* banner-section */
-
+/*
 .banner {
-  display: flex;
   position: relative;
   top: 1rem;
-  padding: 2rem 2.5rem;
-  background-color: #d3d3d3;
   width: 100%;
+  padding-top: 4rem;
+  background-color: #d3d3d3;
+
 }
 
 .banner img {
@@ -129,21 +526,21 @@ nav span {
 }
 .banner .image-container {
   width: 60%;
+  padding: 2rem 1.5rem;
 }
 
 .banner .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 40%;
-  margin-left: 1.5rem;
+  width: 40%;
+
 }
 
-.banner h1 {
-  font-size: 4.5rem;
-  font-weight: 700;
-  line-height: 1.4;
-  padding: 1.5rem;
+.header,
+.button {
+  width: 80%;
+  line-height: 2rem;
 }
 
 .banner h3 {
@@ -160,7 +557,7 @@ nav span {
 }
 
 /* Information section */
-
+/*
 .information {
   display: inline-flex;
   justify-content: flex-start;
@@ -221,7 +618,7 @@ nav span {
 }
 
 /* Courses Section */
-
+/*
 .courses {
   padding: 0 4.5rem 2rem 4.5rem;
   background-color: #d3d3d3;
@@ -255,7 +652,7 @@ nav span {
 }
 
 /* Thesis Section */
-
+/*
 .thesis-container {
   padding-bottom: 2rem;
 
@@ -283,7 +680,7 @@ nav span {
 }
 
 /* Footer */
-
+/*
 footer {
   background-color: lightgray;
   padding: 1rem 1.5rem 2rem 1.5rem;
@@ -300,3 +697,4 @@ footer .content {
 footer .copyright {
   flex-grow: 1;
 }
+*/
